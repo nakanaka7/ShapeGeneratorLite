@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="NakanakaCommons-1.4.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/local-maven-repo/NakanakaCommons-1.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
