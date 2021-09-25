@@ -1,4 +1,4 @@
-main: tokyo.nakanaka.shapeGenerator.bukkit.ShapeGeneratorPlugin
+main: tokyo.nakanaka.shapeGenerator.bukkit.ShapeGeneratorLitePlugin
 name: ShapeGeneratorLite
 version: 1.0.0
 commands:

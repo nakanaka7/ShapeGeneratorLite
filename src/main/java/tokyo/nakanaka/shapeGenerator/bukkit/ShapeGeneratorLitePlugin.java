@@ -1,28 +1,24 @@
 package tokyo.nakanaka.shapeGenerator.bukkit;
 
-import java.util.List;
-
 import org.bukkit.command.Command;
-import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import tokyo.nakanaka.Scheduler;
 import tokyo.nakanaka.annotation.PublicAPI;
 import tokyo.nakanaka.bukkit.BukkitFunctions;
-import tokyo.nakanaka.bukkit.BukkitScheduler;
 import tokyo.nakanaka.commandSender.CommandSender;
-import tokyo.nakanaka.shapeGenerator.Main;
+import tokyo.nakanaka.shapeGenerator.MainLite;
 
+import java.util.List;
+
+/**
+ * Plugin class of ShapeGeneratorLite
+ */
 @PublicAPI
-public class ShapeGeneratorPlugin extends JavaPlugin {
-	private Main main;
+public class ShapeGeneratorLitePlugin extends JavaPlugin {
+	private MainLite main;
 	
 	@Override
 	public void onEnable() {
-		this.main = new Main(new BukkitBlockIDListFactory());
-		Scheduler scheduler = new BukkitScheduler(this);
-		Listener listener = new BukkitClickBlockEventListener(this.main, scheduler);
-		this.getServer().getPluginManager().registerEvents(listener, this);
+		this.main = new MainLite(new BukkitBlockIDListFactory());
 	}
 	
 	@Override
