@@ -1,6 +1,6 @@
 # ShapeGeneratorLite
 Version: 1.0.0 (in Semantic Versioning 2.0.0)</br>
-Description: Lite version of ShapeGenerator(Premium version is private)
+Description: Lite version of ShapeGenerator(Premium version is private)</br>
 Java Version: 16</br>
 Original Spigot Library: 1.16.5-R0.1-SNAPSHOT</br>
 Public API Definition:</br>
