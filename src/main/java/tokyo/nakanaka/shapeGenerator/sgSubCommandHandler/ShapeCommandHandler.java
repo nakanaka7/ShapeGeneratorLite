@@ -53,7 +53,7 @@ public class ShapeCommandHandler implements SubCommandHandler {
 	@Override
 	public List<String> onTabComplete(PlayerData playerData, Player player, String[] args) {
 		return switch(args.length) {
-			case 1 -> List.of(SelectionShape.values()).stream()
+			case 1 -> List.of(this.shapeStrtgRepo.registeredShapes()).stream()
 					.map(s -> s.toString().toLowerCase())
 					.collect(Collectors.toList());
 			default -> List.of();
